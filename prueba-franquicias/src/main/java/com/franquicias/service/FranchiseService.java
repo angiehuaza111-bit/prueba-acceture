@@ -28,4 +28,6 @@ public interface FranchiseService {
     Flux<ProductoConSucursal> getTopProductsByFranchise(Long franchiseId);
 
     Flux<Product> getProductsByBranch(Long branchId);
+
+    Flux<Franchise> getAllFranchises();
 }

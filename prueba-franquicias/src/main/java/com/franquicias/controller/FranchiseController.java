@@ -26,6 +26,12 @@ public class FranchiseController {
         this.service = service;
     }
 
+    @GetMapping("/franchises")
+    @Operation(summary = "Obtener todas las franquicias")
+    public Flux<Franchise> getAllFranchises() {
+        return service.getAllFranchises();
+    }
+
     @PostMapping("/franchises")
     @ResponseStatus(HttpStatus.CREATED)
     @Operation(summary = "Crear una nueva franquicia")

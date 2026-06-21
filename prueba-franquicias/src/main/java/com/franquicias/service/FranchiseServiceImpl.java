@@ -97,6 +97,11 @@ public class FranchiseServiceImpl implements FranchiseService {
     }
 
     @Override
+    public Flux<Franchise> getAllFranchises() {
+        return franchiseRepository.findAll();
+    }
+
+    @Override
     public Flux<Product> getProductsByBranch(Long branchId) {
         return productRepository.findByBranchId(branchId);
     }
