@@ -19,6 +19,8 @@ Una vez corriendo la aplicación:
 |---------|-----|
 | Swagger UI | `http://localhost:8080/swagger-ui.html` |
 | OpenAPI JSON | `http://localhost:8080/api-docs` |
+| Swagger UI (produccio) | `http://18.117.169.139:8080/webjars/swagger-ui/index.html` |
+| OpenAPI JSON (produccion)| `http://18.117.169.139:8080/api/` |
 
 ## Endpoints
 
